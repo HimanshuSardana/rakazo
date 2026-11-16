@@ -75,6 +75,11 @@ msgstr "{0, plural, one {ממתין להתחברות — הקוד יפוג בע�
 msgid "{0, plural, one {Waiting for sign-in — the link expires in about # minute.} other {Waiting for sign-in — the link expires in about # minutes.}}"
 msgstr "{0, plural, one {ממתין להתחברות — הקישור יפוג בעוד כ-# דקה.} other {ממתין להתחברות — הקישור יפוג בעוד כ-# דקות.}}"
 
+#. placeholder {0}: bot.name
+#: apps/web/src/pages/UsageSettingsPanel.tsx
+msgid "{0} (deleted)"
+msgstr ""
+
 #. placeholder {0}: file.name
 #: apps/web/src/pages/shell/use-composer-actions.ts
 msgid "{0} (max {ATTACHMENT_MAX_COUNT} attachments)"
@@ -327,6 +332,12 @@ msgstr "לפני {count} שע׳"
 #: apps/mobile/lib/activity.ts
 msgid "{count}m ago"
 msgstr "לפני {count} דק׳"
+
+#. placeholder {0}: number(point.totalTokens)
+#. placeholder {1}: cost(point.costUsd)
+#: apps/web/src/pages/UsageSettingsPanel.tsx
+msgid "{day}: {0} tokens, {1}"
+msgstr ""
 
 #: apps/mobile/app/paywall.tsx
 msgid "{days} days free"
@@ -868,6 +879,14 @@ msgstr "1 לא נקראה"
 msgid "3 hours"
 msgstr "3 שעות"
 
+#: apps/web/src/pages/UsageSettingsPanel.tsx
+msgid "30 days"
+msgstr ""
+
+#: apps/web/src/pages/UsageSettingsPanel.tsx
+msgid "7 days"
+msgstr ""
+
 #: apps/web/src/components/ModelCredits.tsx
 msgid "A {times}× more powerful computer for your bot"
 msgstr "מחשב חזק פי {times} לבוט שלך"
@@ -1293,6 +1312,7 @@ msgstr "כל ה-{price} הולכים לשימוש במודלים."
 #: apps/web/src/components/integrations/agent-access.tsx
 #: apps/web/src/pages/Artifacts.tsx
 #: apps/web/src/pages/shell/agent-import-plan.tsx
+#: apps/web/src/pages/UsageSettingsPanel.tsx
 msgid "All bots"
 msgstr "כל הבוטים"
 
@@ -1300,6 +1320,10 @@ msgstr "כל הבוטים"
 #: apps/web/src/pages/Artifacts.tsx
 msgid "All files"
 msgstr "כל הקבצים"
+
+#: apps/web/src/pages/UsageSettingsPanel.tsx
+msgid "All models"
+msgstr ""
 
 #: apps/mobile/components/space-availability.tsx
 #: apps/web/src/components/integrations/space-availability.tsx
@@ -1311,6 +1335,7 @@ msgid "All statuses"
 msgstr "כל הסטטוסים"
 
 #: apps/web/src/pages/Artifacts.tsx
+#: apps/web/src/pages/UsageSettingsPanel.tsx
 msgid "All time"
 msgstr "כל הזמנים"
 
@@ -1946,6 +1971,7 @@ msgstr "בוט"
 #: apps/web/src/pages/shell/avatar-studio-popover.tsx
 #: apps/web/src/pages/shell/message-view.tsx
 #: apps/web/src/pages/SpaceSearch.tsx
+#: apps/web/src/pages/UsageSettingsPanel.tsx
 msgid "Bot"
 msgstr "בוט"
 
@@ -2085,7 +2111,7 @@ msgstr "מתקשר אליך…"
 msgid "Calling…"
 msgstr "מתקשר…"
 
-#: apps/web/src/pages/AccountSettingsOverlay.tsx
+#: apps/web/src/pages/UsageSettingsPanel.tsx
 msgid "Calls"
 msgstr "קריאות"
 
@@ -3098,7 +3124,7 @@ msgstr "העתקת ההנחיה"
 msgid "Copy rows"
 msgstr "העתקת שורות"
 
-#: apps/web/src/pages/AccountSettingsOverlay.tsx
+#: apps/web/src/pages/UsageSettingsPanel.tsx
 msgid "Cost"
 msgstr "עלות"
 
@@ -3629,6 +3655,10 @@ msgstr "לא ניתן לטעון את הקובץ הזה."
 msgid "Could not load this page."
 msgstr "לא ניתן לטעון את הדף הזה."
 
+#: apps/web/src/pages/UsageSettingsPanel.tsx
+msgid "Could not load usage."
+msgstr ""
+
 #: apps/mobile/app/(settings)/voice.tsx
 #: apps/web/src/pages/VoiceSettingsOverlay.tsx
 msgid "Could not load voice settings"
@@ -3795,6 +3825,7 @@ msgstr "לא ניתן להסיר את הפריט"
 msgid "Could not rename connection"
 msgstr "לא ניתן לשנות את שם החיבור"
 
+#: apps/mobile/lib/use-inbox-chat-actions.ts
 #: apps/web/src/pages/shell/dialogs.tsx
 msgid "Could not rename section"
 msgstr "לא ניתן לשנות את שם המקטע"
@@ -4395,6 +4426,10 @@ msgstr "כהה"
 msgid "Data"
 msgstr "נתונים"
 
+#: apps/web/src/pages/UsageSettingsPanel.tsx
+msgid "Date range"
+msgstr ""
+
 #: apps/mobile/lib/cron.ts
 #: apps/web/src/lib/billing.ts
 #: apps/web/src/lib/cron.ts
@@ -4609,6 +4644,7 @@ msgid "Deleted"
 msgstr "נמחק"
 
 #: apps/web/src/pages/shell/transcript-member-name.ts
+#: apps/web/src/pages/UsageSettingsPanel.tsx
 msgid "Deleted bot"
 msgstr "בוט שנמחק"
 
@@ -5884,7 +5920,7 @@ msgstr "לכלול מפתחות API"
 msgid "Incoming call"
 msgstr "שיחה נכנסת"
 
-#: apps/web/src/pages/AccountSettingsOverlay.tsx
+#: apps/web/src/pages/UsageSettingsPanel.tsx
 msgid "Input"
 msgstr "קלט"
 
@@ -6277,6 +6313,10 @@ msgstr "טוען תצוגה מקדימה…"
 msgid "Loading tools…"
 msgstr "טוען כלים…"
 
+#: apps/web/src/pages/UsageSettingsPanel.tsx
+msgid "Loading usage…"
+msgstr ""
+
 #: apps/web/src/pages/VoiceSettingsOverlay.tsx
 msgid "Loading voice providers…"
 msgstr "טוען ספקי קול…"
@@ -6665,12 +6705,12 @@ msgstr "מצב"
 #: apps/mobile/app/(settings)/model-picker.tsx
 #: apps/mobile/app/bot-settings.tsx
 #: apps/mobile/components/compatible-endpoint-form.tsx
-#: apps/web/src/pages/AccountSettingsOverlay.tsx
 #: apps/web/src/pages/model-settings/compatible-model-fields.tsx
 #: apps/web/src/pages/onboarding/model-step.tsx
 #: apps/web/src/pages/routine-editor/model-settings.tsx
 #: apps/web/src/pages/shell/agent-import-plan.tsx
 #: apps/web/src/pages/shell/chat-model-picker.tsx
+#: apps/web/src/pages/UsageSettingsPanel.tsx
 msgid "Model"
 msgstr "מודל"
 
@@ -7253,6 +7293,10 @@ msgstr "אין כלים זמינים."
 msgid "No trigger"
 msgstr "ללא טריגר"
 
+#: apps/web/src/pages/UsageSettingsPanel.tsx
+msgid "No usage for this selection."
+msgstr ""
+
 #. js-lingui-explicit-id
 #: packages/i18n/src/vault.ts
 msgid "No website and password columns found."
@@ -7677,7 +7721,7 @@ msgstr "OTA {id}, {date}"
 msgid "Other model…"
 msgstr "מודל אחר…"
 
-#: apps/web/src/pages/AccountSettingsOverlay.tsx
+#: apps/web/src/pages/UsageSettingsPanel.tsx
 msgid "Output"
 msgstr "פלט"
 
@@ -8530,6 +8574,7 @@ msgid "Rename"
 msgstr "שינוי שם"
 
 #: apps/mobile/components/bot-organize-modal.tsx
+#: apps/mobile/components/inbox-render-item.tsx
 #: apps/mobile/components/inbox-swipe-row.ios.tsx
 #: apps/mobile/lib/use-inbox-chat-actions.ts
 #: apps/web/src/pages/BotContextMenu.tsx
@@ -8923,7 +8968,7 @@ msgstr "מריץ את {workingRoutine}…"
 msgid "Running…"
 msgstr "מריץ…"
 
-#: apps/web/src/pages/AccountSettingsOverlay.tsx
+#: apps/web/src/pages/UsageSettingsPanel.tsx
 msgid "Runs"
 msgstr "הרצות"
 
@@ -10692,6 +10737,11 @@ msgstr "תוצאת הכלי מהשרת הזה לא נכנסת למודל. יש �
 msgid "This Space keeps its own vault, so its bots can't use account items."
 msgstr "למרחב הזה יש כספת משלו, ולכן הבוטים שלו לא יכולים להשתמש בפריטים של החשבון."
 
+#. js-lingui-explicit-id
+#: packages/i18n/src/vault.ts
+msgid "This Space keeps its own vault. Its bots save and use items there, not here: open the Space's settings, then Vault."
+msgstr ""
+
 #: apps/mobile/app/(settings)/model-connection.tsx
 #: apps/web/src/pages/model-settings/connection-controls.tsx
 msgid "This subscription sign-in is not available in Rakazo yet. Use a deployment credential or choose another provider."
@@ -10763,6 +10813,7 @@ msgstr "אל:"
 #: apps/mobile/components/time-separator.tsx
 #: apps/web/src/pages/Artifacts.tsx
 #: apps/web/src/pages/shell/chat-context.tsx
+#: apps/web/src/pages/UsageSettingsPanel.tsx
 msgid "Today"
 msgstr "היום"
 
@@ -10770,7 +10821,7 @@ msgstr "היום"
 msgid "Toggle sidebar"
 msgstr "הצגה או הסתרה של סרגל הצד"
 
-#: apps/web/src/pages/AccountSettingsOverlay.tsx
+#: apps/web/src/pages/UsageSettingsPanel.tsx
 msgid "Tokens"
 msgstr "טוקנים"
 
@@ -11151,6 +11202,10 @@ msgstr "URL"
 #: apps/web/src/pages/settings-nav.ts
 msgid "Usage"
 msgstr "שימוש"
+
+#: apps/web/src/pages/UsageSettingsPanel.tsx
+msgid "Usage over time"
+msgstr ""
 
 #. Switches the saved timezone to this device's, e.g. 'Use Pacific/Auckland'
 #. placeholder {0}: deviceTimezone.replaceAll("_", " ")

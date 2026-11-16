@@ -75,6 +75,11 @@ msgstr "{0, plural, one {Esperando el inicio de sesión: el código vence en apr
 msgid "{0, plural, one {Waiting for sign-in — the link expires in about # minute.} other {Waiting for sign-in — the link expires in about # minutes.}}"
 msgstr "{0, plural, one {Esperando el inicio de sesión: el enlace vence en aproximadamente # minuto.} other {Esperando el inicio de sesión: el enlace vence en aproximadamente # minutos.}}"
 
+#. placeholder {0}: bot.name
+#: apps/web/src/pages/UsageSettingsPanel.tsx
+msgid "{0} (deleted)"
+msgstr ""
+
 #. placeholder {0}: file.name
 #: apps/web/src/pages/shell/use-composer-actions.ts
 msgid "{0} (max {ATTACHMENT_MAX_COUNT} attachments)"
@@ -327,6 +332,12 @@ msgstr "hace {count} h"
 #: apps/mobile/lib/activity.ts
 msgid "{count}m ago"
 msgstr "hace {count} min"
+
+#. placeholder {0}: number(point.totalTokens)
+#. placeholder {1}: cost(point.costUsd)
+#: apps/web/src/pages/UsageSettingsPanel.tsx
+msgid "{day}: {0} tokens, {1}"
+msgstr ""
 
 #: apps/mobile/app/paywall.tsx
 msgid "{days} days free"
@@ -868,6 +879,14 @@ msgstr "1 sin leer"
 msgid "3 hours"
 msgstr "3 horas"
 
+#: apps/web/src/pages/UsageSettingsPanel.tsx
+msgid "30 days"
+msgstr ""
+
+#: apps/web/src/pages/UsageSettingsPanel.tsx
+msgid "7 days"
+msgstr ""
+
 #: apps/web/src/components/ModelCredits.tsx
 msgid "A {times}× more powerful computer for your bot"
 msgstr "Una computadora {times}× más potente para tu bot"
@@ -1293,6 +1312,7 @@ msgstr "El total de {price} se destina al uso de modelos."
 #: apps/web/src/components/integrations/agent-access.tsx
 #: apps/web/src/pages/Artifacts.tsx
 #: apps/web/src/pages/shell/agent-import-plan.tsx
+#: apps/web/src/pages/UsageSettingsPanel.tsx
 msgid "All bots"
 msgstr "Todos los bots"
 
@@ -1300,6 +1320,10 @@ msgstr "Todos los bots"
 #: apps/web/src/pages/Artifacts.tsx
 msgid "All files"
 msgstr "Todos los archivos"
+
+#: apps/web/src/pages/UsageSettingsPanel.tsx
+msgid "All models"
+msgstr ""
 
 #: apps/mobile/components/space-availability.tsx
 #: apps/web/src/components/integrations/space-availability.tsx
@@ -1311,6 +1335,7 @@ msgid "All statuses"
 msgstr "Todos los estados"
 
 #: apps/web/src/pages/Artifacts.tsx
+#: apps/web/src/pages/UsageSettingsPanel.tsx
 msgid "All time"
 msgstr "Todo el tiempo"
 
@@ -1946,6 +1971,7 @@ msgstr "bot"
 #: apps/web/src/pages/shell/avatar-studio-popover.tsx
 #: apps/web/src/pages/shell/message-view.tsx
 #: apps/web/src/pages/SpaceSearch.tsx
+#: apps/web/src/pages/UsageSettingsPanel.tsx
 msgid "Bot"
 msgstr "Bot"
 
@@ -2085,7 +2111,7 @@ msgstr "Te está llamando…"
 msgid "Calling…"
 msgstr "Llamando…"
 
-#: apps/web/src/pages/AccountSettingsOverlay.tsx
+#: apps/web/src/pages/UsageSettingsPanel.tsx
 msgid "Calls"
 msgstr "Llamadas"
 
@@ -3098,7 +3124,7 @@ msgstr "Copiar prompt"
 msgid "Copy rows"
 msgstr "Copiar filas"
 
-#: apps/web/src/pages/AccountSettingsOverlay.tsx
+#: apps/web/src/pages/UsageSettingsPanel.tsx
 msgid "Cost"
 msgstr "Coste"
 
@@ -3629,6 +3655,10 @@ msgstr "No se pudo cargar este archivo."
 msgid "Could not load this page."
 msgstr "No se pudo cargar esta página."
 
+#: apps/web/src/pages/UsageSettingsPanel.tsx
+msgid "Could not load usage."
+msgstr ""
+
 #: apps/mobile/app/(settings)/voice.tsx
 #: apps/web/src/pages/VoiceSettingsOverlay.tsx
 msgid "Could not load voice settings"
@@ -3795,6 +3825,7 @@ msgstr "No se pudo quitar el elemento"
 msgid "Could not rename connection"
 msgstr "No se pudo cambiar el nombre de la conexión"
 
+#: apps/mobile/lib/use-inbox-chat-actions.ts
 #: apps/web/src/pages/shell/dialogs.tsx
 msgid "Could not rename section"
 msgstr "No se pudo renombrar la sección"
@@ -4395,6 +4426,10 @@ msgstr "Oscuro"
 msgid "Data"
 msgstr "Datos"
 
+#: apps/web/src/pages/UsageSettingsPanel.tsx
+msgid "Date range"
+msgstr ""
+
 #: apps/mobile/lib/cron.ts
 #: apps/web/src/lib/billing.ts
 #: apps/web/src/lib/cron.ts
@@ -4609,6 +4644,7 @@ msgid "Deleted"
 msgstr "Eliminada"
 
 #: apps/web/src/pages/shell/transcript-member-name.ts
+#: apps/web/src/pages/UsageSettingsPanel.tsx
 msgid "Deleted bot"
 msgstr "Bot eliminado"
 
@@ -5884,7 +5920,7 @@ msgstr "Incluir claves de API"
 msgid "Incoming call"
 msgstr "Llamada entrante"
 
-#: apps/web/src/pages/AccountSettingsOverlay.tsx
+#: apps/web/src/pages/UsageSettingsPanel.tsx
 msgid "Input"
 msgstr "Entrada"
 
@@ -6277,6 +6313,10 @@ msgstr "Cargando vista previa…"
 msgid "Loading tools…"
 msgstr "Cargando herramientas…"
 
+#: apps/web/src/pages/UsageSettingsPanel.tsx
+msgid "Loading usage…"
+msgstr ""
+
 #: apps/web/src/pages/VoiceSettingsOverlay.tsx
 msgid "Loading voice providers…"
 msgstr "Cargando proveedores de voz…"
@@ -6665,12 +6705,12 @@ msgstr "Modo"
 #: apps/mobile/app/(settings)/model-picker.tsx
 #: apps/mobile/app/bot-settings.tsx
 #: apps/mobile/components/compatible-endpoint-form.tsx
-#: apps/web/src/pages/AccountSettingsOverlay.tsx
 #: apps/web/src/pages/model-settings/compatible-model-fields.tsx
 #: apps/web/src/pages/onboarding/model-step.tsx
 #: apps/web/src/pages/routine-editor/model-settings.tsx
 #: apps/web/src/pages/shell/agent-import-plan.tsx
 #: apps/web/src/pages/shell/chat-model-picker.tsx
+#: apps/web/src/pages/UsageSettingsPanel.tsx
 msgid "Model"
 msgstr "Modelo"
 
@@ -7253,6 +7293,10 @@ msgstr "No hay herramientas disponibles."
 msgid "No trigger"
 msgstr "Sin disparador"
 
+#: apps/web/src/pages/UsageSettingsPanel.tsx
+msgid "No usage for this selection."
+msgstr ""
+
 #. js-lingui-explicit-id
 #: packages/i18n/src/vault.ts
 msgid "No website and password columns found."
@@ -7677,7 +7721,7 @@ msgstr "OTA {id}, {date}"
 msgid "Other model…"
 msgstr "Otro modelo…"
 
-#: apps/web/src/pages/AccountSettingsOverlay.tsx
+#: apps/web/src/pages/UsageSettingsPanel.tsx
 msgid "Output"
 msgstr "Salida"
 
@@ -8530,6 +8574,7 @@ msgid "Rename"
 msgstr "Cambiar nombre"
 
 #: apps/mobile/components/bot-organize-modal.tsx
+#: apps/mobile/components/inbox-render-item.tsx
 #: apps/mobile/components/inbox-swipe-row.ios.tsx
 #: apps/mobile/lib/use-inbox-chat-actions.ts
 #: apps/web/src/pages/BotContextMenu.tsx
@@ -8923,7 +8968,7 @@ msgstr "Ejecutando {workingRoutine}…"
 msgid "Running…"
 msgstr "Ejecutando…"
 
-#: apps/web/src/pages/AccountSettingsOverlay.tsx
+#: apps/web/src/pages/UsageSettingsPanel.tsx
 msgid "Runs"
 msgstr "Ejecuciones"
 
@@ -10692,6 +10737,11 @@ msgstr "El resultado de la herramienta de este servidor no cabe en el modelo. De
 msgid "This Space keeps its own vault, so its bots can't use account items."
 msgstr "Este Espacio tiene su propia bóveda, así que sus bots no pueden usar elementos de la cuenta."
 
+#. js-lingui-explicit-id
+#: packages/i18n/src/vault.ts
+msgid "This Space keeps its own vault. Its bots save and use items there, not here: open the Space's settings, then Vault."
+msgstr ""
+
 #: apps/mobile/app/(settings)/model-connection.tsx
 #: apps/web/src/pages/model-settings/connection-controls.tsx
 msgid "This subscription sign-in is not available in Rakazo yet. Use a deployment credential or choose another provider."
@@ -10763,6 +10813,7 @@ msgstr "Para:"
 #: apps/mobile/components/time-separator.tsx
 #: apps/web/src/pages/Artifacts.tsx
 #: apps/web/src/pages/shell/chat-context.tsx
+#: apps/web/src/pages/UsageSettingsPanel.tsx
 msgid "Today"
 msgstr "Hoy"
 
@@ -10770,7 +10821,7 @@ msgstr "Hoy"
 msgid "Toggle sidebar"
 msgstr "Mostrar u ocultar barra lateral"
 
-#: apps/web/src/pages/AccountSettingsOverlay.tsx
+#: apps/web/src/pages/UsageSettingsPanel.tsx
 msgid "Tokens"
 msgstr "Tokens"
 
@@ -11151,6 +11202,10 @@ msgstr "URL"
 #: apps/web/src/pages/settings-nav.ts
 msgid "Usage"
 msgstr "Uso"
+
+#: apps/web/src/pages/UsageSettingsPanel.tsx
+msgid "Usage over time"
+msgstr ""
 
 #. Switches the saved timezone to this device's, e.g. 'Use Pacific/Auckland'
 #. placeholder {0}: deviceTimezone.replaceAll("_", " ")
